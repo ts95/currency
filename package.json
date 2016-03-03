@@ -1,0 +1,24 @@
+{
+  "name": "currencybot",
+  "version": "1.0.0",
+  "description": "Telegram Bot for converting currencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ts95/currency"
+  },
+  "keywords": [
+    "currency",
+    "bot",
+    "telegram"
+  ],
+  "author": "Toni Sucic",
+  "license": "MIT",
+  "dependencies": {
+    "currency-converter": "^0.1.12",
+    "node-telegram-bot-api": "^0.20.1"
+  }
+}
