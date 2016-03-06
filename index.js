@@ -49,10 +49,10 @@ bot.onText(/\/(convert|cc) (\w{3}) (\w{3}) (\d+([,\.]\d+)?)/i, function(msg, mat
         .catch(err => error(msg, err));
 });
 
-bot.onText(/\/(convert|cc) (\d+([,\.]\d+)?) (\w{3}) to (\w{3})/i, function(msg, match) {
+bot.onText(/\/(convert|cc) (\d+([,\.]\d+)?) (\w{3}) (to|in) (\w{3})/i, function(msg, match) {
     const amount = Number(match[2].replace(',', '.'));
     const convertFrom = match[4].toUpperCase();
-    const convertTo = match[5].toUpperCase();
+    const convertTo = match[6].toUpperCase();
 
     convert(msg, amount, convertFrom, convertTo)
         .catch(err => error(msg, err));
